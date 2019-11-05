@@ -1,0 +1,18 @@
+#
+# Copyright 2019 isobar. All Rights Reserved.
+#
+# 2019ncku
+#
+# Usage:
+#       dk build -t docker-nodejs-2019ncku:1.0.0 -f Dockerfile-nodejs-2019ncku .
+#
+FROM node:8.16-alpine
+LABEL maintainer "jacky.huang@isobar.com"
+
+WORKDIR /home/ncku-2019
+
+COPY . .
+RUN npm install
+
+# Define default command.
+CMD ["npm", "start"]
