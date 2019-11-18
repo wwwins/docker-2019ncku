@@ -16,17 +16,22 @@ let DB_PWD = 'XXXXX';
 // mongodb
 mongoUrl: 'mongodb://XX:XXXXX@mongo:27017/',
 mongoDbName: 'Sinopac_2019ncku',
-// public URL
-serverUrl: 'https://4testbackend.isobar.com.tw',
-frontUrl: 'https://4testcampaign.isobar.com.tw',
 ```
 
 ### Setup App .env
 ```
-// public URL
-URL = https://4testcampaign.isobar.com.tw
 // mongodb
 MONGO_URI = mongodb://XX:XXXXX@mongo:27017/Sinopac_2019ncku
+```
+
+### Setup Makefile
+```
+// App URL
+APP_URL = https://4testcampaign.isobar.com.tw
+
+// Backend URL
+serverUrl: 'https://4testbackend.isobar.com.tw',
+frontUrl: 'https://4testcampaign.isobar.com.tw',
 ```
 
 ## Usage
